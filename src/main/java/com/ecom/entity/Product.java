@@ -1,5 +1,6 @@
 package com.ecom.entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -47,7 +48,7 @@ public class Product {
     private String size; // e.g. "8", "7-9"
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private Double price;
+    private BigDecimal price;
 
     @Column(nullable = false)
     private Integer stock;
